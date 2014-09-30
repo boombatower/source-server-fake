@@ -1,0 +1,5 @@
+#!/bin/bash
+docker ps -a | grep -q boombatower/source-server-fake && docker start -ai boombatower/source-server-fake || \
+docker run -itP --name source-server-fake \
+  --restart 'on-failure' \
+  boombatower/source-server-fake
