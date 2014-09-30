@@ -6,7 +6,7 @@ Usage
 -----
 
 ``` sh
-$ docker run -P --restart 'on-failure' boombatower/source-server-fake
+$ docker run -dP --restart 'on-failure' boombatower/source-server-fake
 ```
 
 Result
