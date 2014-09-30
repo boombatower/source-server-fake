@@ -18,7 +18,10 @@ do {
   // Block until data received.
   $from = '';
   $from_port = 0;
-  socket_recvfrom($socket, $buffer, 256, 0, $from, $from_port);
+  socket_recvfrom($socket, $buffer, 1400, 0, $from, $from_port);
+
+  // Check that head byte indicates A2S_INFO (skip long at beginning).
+  if (ord($buffer[4]) != 0x54) continue;
 
   echo "Received A2S_INFO request from $from:$from_port" . PHP_EOL;
 
