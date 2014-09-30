@@ -13,3 +13,5 @@ Result
 ------
 
 LAN broadcast requests and direct server info requests will result in a fake Team Fortress 2 server.
+
+![Screenshot of Steam server browser LAN tab](screenshot.png)
