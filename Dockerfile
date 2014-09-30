@@ -1,7 +1,7 @@
 # http://docs.docker.com/reference/builder
 # Source Server Fake image (boombatower/source-server-fake).
 
-FROM boombatower/opensuse:13.1
+FROM boombatower/opensuse
 MAINTAINER Jimmy Berry <jimmy@boombatower.com>
 
 # Install software:
